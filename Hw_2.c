@@ -1,3 +1,4 @@
+// Converting Decimal to Binary and Counting Digits With Stack
 #include<stdio.h> 
 #include<stdlib.h>
 #include<math.h>
@@ -181,15 +182,15 @@ void countDigits(STACK *stack,char *buffer){
 }
 
 int main(){
-	STACK *stack=(STACK*)malloc(sizeof(STACK));
-	initStack(stack);
+    STACK *stack=(STACK*)malloc(sizeof(STACK));
+    initStack(stack);
     int num;
     char *buffer;
     printf("Bir sayi giriniz : "); 
     scanf("%d",&num);
-	buffer = convertBinary(stack,num);
-	printf("Girilen sayinin binary gosterimi : ");
-	printf("%s\n",buffer);
+    buffer = convertBinary(stack,num);
+    printf("Girilen sayinin binary gosterimi : ");
+    printf("%s\n",buffer);
     countDigits(stack,buffer);
   return 0; 
 } 
