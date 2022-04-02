@@ -1,3 +1,4 @@
+//Fast Linked List Implementation
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
@@ -48,7 +49,6 @@ NODE *constructList(NODE *head , int n){
 void printList(NODE *head){
 	NODE *tmp,*p;
 	p = head;
-	
 	for(p;p!=NULL;p=p->below){
 		printf("\n");
 		tmp = p->next;
